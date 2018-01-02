@@ -5,10 +5,10 @@ def index
 end
 
 def show
+  @coupon = Coupon.find(params[:id])
 end
 
 def new
-  @coupon = Coupon.find(params[:id])
 end
 
 def create
